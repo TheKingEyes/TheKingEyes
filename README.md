@@ -1,4 +1,4 @@
-# 👋 Hi, I’m @TheKingEyes
+# 👋 Hi, I’m Daniel Simarmata
 
 - 👀 I’m interested in **computer networking, IT support, wireless technologies, and network monitoring systems**
 - 🌱 I’m currently learning **Information Systems at Universitas Terbuka (semester 7), and enhancing my skills in computer networking, Linux, and cloud computing**
