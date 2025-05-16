@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perulangan 1–50 dengan Vue</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+    }
+    li {
+      padding: 4px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h2>Perulangan angka 1 sampai 50</h2>
+    <ul>
+      <li v-for="number in numbers" :key="number">{{ number }}</li>
+    </ul>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          numbers: Array.from({ length: 50 }, (_, i) => i + 1)
+        };
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
